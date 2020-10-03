@@ -1,0 +1,5 @@
+<map id="Field::x_size" name="Field::x_size">
+<area shape="rect" id="node1" title="Permet d&#39;obtenir la taille du terrain en x." alt="" coords="172,31,275,57"/>
+<area shape="rect" id="node2" href="$class_field.html#aaabebf8169649635aa075aaffb609636" title=" " alt="" coords="11,5,118,32"/>
+<area shape="rect" id="node3" href="$class_field.html#aa3abd74e876e442d81481297ee4068a6" title="Permet d&#39;afficher tous les éléments de la map (départ, arrivée, chemin, obstacles) dans vision...." alt="" coords="5,56,124,83"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Field::fillmap" name="Field::fillmap">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,112,57"/>
+<area shape="rect" id="node2" href="$class_field.html#a3483375d78dc1f42535bc0309459b1ec" title="Permet d&#39;obtenir la taille du terrain en x." alt="" coords="160,5,263,32"/>
+<area shape="rect" id="node3" href="$class_field.html#a31edf30e2a340616d80e3335a32de346" title="Permet d&#39;obtneir la taille du terrain en y." alt="" coords="160,56,263,83"/>
+</map>

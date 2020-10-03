@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet1A-Astar:  Fichier source de field.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet1A-Astar
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('field_8hpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">field.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="field_8hpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef __FIELD_H_</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define __FIELD_H_</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;array&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">//32 * 23</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="field_8hpp.html#a898606140dee9ce0adf096de00824d94">   17</a></span>&#160;<span class="preprocessor">#define MAX_X 50</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="field_8hpp.html#a985cc18be96dda7f59fd0400725e4aef">   21</a></span>&#160;<span class="preprocessor">#define MAX_Y 50</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="field_8hpp.html#adc6e5733fc3c22f0a7b2914188c49c90">   31</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="field_8hpp.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>{</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;nothing,</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;obstacle,</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;departure,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;arrival,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;path,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_square.html">   43</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_square.html">Square</a>{</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="class_square.html#a3dc7ff9aefc2725172b5d3153973d243">Square</a>();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <a class="code" href="class_square.html#a3dc7ff9aefc2725172b5d3153973d243">Square</a>(<span class="keywordtype">int</span> xw, <span class="keywordtype">int</span> yw, <span class="keyword">enum</span> <a class="code" href="field_8hpp.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a> statew);</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_square.html#a41cb36e201f5c8cf9539a395ad3f1d5f">   58</a></span>&#160;        <span class="keyword">enum</span> <a class="code" href="field_8hpp.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a> <a class="code" href="class_square.html#a41cb36e201f5c8cf9539a395ad3f1d5f">square_state</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="comment">/*</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">         * \brief Permet d&#39;actualiser l&#39;état d&#39;une case</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">         */</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordtype">void</span> update_State(<a class="code" href="class_square.html">Square</a> <a class="code" href="class_square.html">Square</a>, <span class="keyword">enum</span> <a class="code" href="field_8hpp.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a> <a class="code" href="field_8hpp.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordtype">int</span> x;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordtype">int</span> y;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;};</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment"> * \class Field</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment"> * \brief Classe permettant de coder la map</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="class_field.html">   72</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_field.html">Field</a> {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    public :</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <a class="code" href="class_field.html#a3e804c92273d9159f413f227b535c672">Field</a>();</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_field.html#a3483375d78dc1f42535bc0309459b1ec">x_size</a>(<a class="code" href="class_field.html">Field</a> <a class="code" href="class_field.html">Field</a>);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_field.html#a31edf30e2a340616d80e3335a32de346">y_size</a>(<a class="code" href="class_field.html">Field</a> <a class="code" href="class_field.html">Field</a>);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <a class="code" href="class_field.html">Field</a> <a class="code" href="class_field.html#aaabebf8169649635aa075aaffb609636">fillmap</a>(<a class="code" href="class_field.html">Field</a> <a class="code" href="class_field.html">Field</a>);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_field.html#aa3abd74e876e442d81481297ee4068a6">printMap</a>(<a class="code" href="class_field.html">Field</a> <a class="code" href="class_field.html">Field</a>);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keyword">enum</span> <a class="code" href="field_8hpp.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a> <a class="code" href="class_field.html#a5ba9ad430e3afee9ec48a38f2068aa22">is_valid</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <a class="code" href="class_field.html">Field</a> <a class="code" href="class_field.html">Field</a>);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    private :</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <a class="code" href="class_square.html">Square</a> new_Square(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keyword">enum</span> <a class="code" href="field_8hpp.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a> <a class="code" href="field_8hpp.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordtype">int</span> x;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordtype">int</span> y;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        std::array&lt;std::array&lt;Square,MAX_X&gt;,<a class="code" href="field_8hpp.html#a985cc18be96dda7f59fd0400725e4aef">MAX_Y</a>&gt; map;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;};</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#endif // __FIELD_H_</span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aclass_square_html_a3dc7ff9aefc2725172b5d3153973d243"><div class="ttname"><a href="class_square.html#a3dc7ff9aefc2725172b5d3153973d243">Square::Square</a></div><div class="ttdeci">Square()</div><div class="ttdoc">Constructeur de la classe, permet de créer un nouveau carré</div><div class="ttdef"><b>Definition:</b> field.cpp:9</div></div>
+<div class="ttc" id="aclass_field_html_a3483375d78dc1f42535bc0309459b1ec"><div class="ttname"><a href="class_field.html#a3483375d78dc1f42535bc0309459b1ec">Field::x_size</a></div><div class="ttdeci">int x_size(Field Field)</div><div class="ttdoc">Permet d'obtenir la taille du terrain en x.</div><div class="ttdef"><b>Definition:</b> field.cpp:27</div></div>
+<div class="ttc" id="aclass_square_html_a41cb36e201f5c8cf9539a395ad3f1d5f"><div class="ttname"><a href="class_square.html#a41cb36e201f5c8cf9539a395ad3f1d5f">Square::square_state</a></div><div class="ttdeci">enum state square_state</div><div class="ttdoc">L'état courant de la case.</div><div class="ttdef"><b>Definition:</b> field.hpp:58</div></div>
+<div class="ttc" id="aclass_field_html_a5ba9ad430e3afee9ec48a38f2068aa22"><div class="ttname"><a href="class_field.html#a5ba9ad430e3afee9ec48a38f2068aa22">Field::is_valid</a></div><div class="ttdeci">enum state is_valid(int x, int y, Field Field)</div><div class="ttdoc">Permet d'obtenir l'état d'une case.</div><div class="ttdef"><b>Definition:</b> field.cpp:278</div></div>
+<div class="ttc" id="aclass_square_html"><div class="ttname"><a href="class_square.html">Square</a></div><div class="ttdoc">Classe permettant de coder un carré de la map.</div><div class="ttdef"><b>Definition:</b> field.hpp:43</div></div>
+<div class="ttc" id="afield_8hpp_html_a985cc18be96dda7f59fd0400725e4aef"><div class="ttname"><a href="field_8hpp.html#a985cc18be96dda7f59fd0400725e4aef">MAX_Y</a></div><div class="ttdeci">#define MAX_Y</div><div class="ttdoc">Taille maximum en y de la map.</div><div class="ttdef"><b>Definition:</b> field.hpp:21</div></div>
+<div class="ttc" id="afield_8hpp_html_adc6e5733fc3c22f0a7b2914188c49c90"><div class="ttname"><a href="field_8hpp.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a></div><div class="ttdeci">state</div><div class="ttdoc">Énumération permettant d'associer à une case un état.</div><div class="ttdef"><b>Definition:</b> field.hpp:31</div></div>
+<div class="ttc" id="aclass_field_html_a3e804c92273d9159f413f227b535c672"><div class="ttname"><a href="class_field.html#a3e804c92273d9159f413f227b535c672">Field::Field</a></div><div class="ttdeci">Field()</div><div class="ttdoc">Permet d'initialiser une map totalement vide.</div><div class="ttdef"><b>Definition:</b> field.cpp:22</div></div>
+<div class="ttc" id="afield_8hpp_html"><div class="ttname"><a href="field_8hpp.html">field.hpp</a></div><div class="ttdoc">Ce fichier permet de coder le terrain que nous utilisons pour l'Astar avec ses obstacles etc....</div></div>
+<div class="ttc" id="aclass_field_html"><div class="ttname"><a href="class_field.html">Field</a></div><div class="ttdef"><b>Definition:</b> field.hpp:72</div></div>
+<div class="ttc" id="aclass_field_html_a31edf30e2a340616d80e3335a32de346"><div class="ttname"><a href="class_field.html#a31edf30e2a340616d80e3335a32de346">Field::y_size</a></div><div class="ttdeci">int y_size(Field Field)</div><div class="ttdoc">Permet d'obtneir la taille du terrain en y.</div><div class="ttdef"><b>Definition:</b> field.cpp:31</div></div>
+<div class="ttc" id="aclass_field_html_aa3abd74e876e442d81481297ee4068a6"><div class="ttname"><a href="class_field.html#aa3abd74e876e442d81481297ee4068a6">Field::printMap</a></div><div class="ttdeci">void printMap(Field Field)</div><div class="ttdoc">Permet d'afficher tous les éléments de la map (départ, arrivée, chemin, obstacles) dans vision....</div><div class="ttdef"><b>Definition:</b> field.cpp:234</div></div>
+<div class="ttc" id="aclass_field_html_aaabebf8169649635aa075aaffb609636"><div class="ttname"><a href="class_field.html#aaabebf8169649635aa075aaffb609636">Field::fillmap</a></div><div class="ttdeci">Field fillmap(Field Field)</div><div class="ttdef"><b>Definition:</b> field.cpp:41</div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="field_8hpp.html">field.hpp</a></li>
+    <li class="footer">Généré par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
+</body>
+</html>
